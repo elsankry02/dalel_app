@@ -1,3 +1,4 @@
+import 'package:dalel_app/core/utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class DalelApp extends StatelessWidget {
@@ -5,6 +6,9 @@ class DalelApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: .light, fontFamily: AppStrings.poppins),
+    );
   }
 }
