@@ -1,0 +1,13 @@
+abstract class AppImages {
+  // OnBoarding
+  static const imagesOnBoarding = "assets/images/onBoarding.png";
+  static const imagesOnBoarding1 = "assets/images/onBoarding1.png";
+  static const imagesOnBoarding2 = "assets/images/onBoarding2.png";
+  // Frame
+  static const imagesFrame = "assets/images/Frame.png";
+  static const imagesFrame3 = "assets/images/frame3.png";
+  static const imagesFrame2 = "assets/images/Frame2.png";
+  // Message
+  static const imagesForgotPassword = "assets/images/forgotPassword.png";
+  static const imagesSucccesOrder = "assets/images/succcesOrder.png";
+}
