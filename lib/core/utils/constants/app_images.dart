@@ -10,4 +10,6 @@ abstract class AppImages {
   // Message
   static const imagesForgotPassword = "assets/images/forgotPassword.png";
   static const imagesSucccesOrder = "assets/images/succcesOrder.png";
+  // Splash
+  static const dalel = "assets/images/Dalel.png";
 }
