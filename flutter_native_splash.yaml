@@ -132,3 +132,5 @@ flutter_native_splash:
 
   #! ANDROID 12+ configuration:
   android_12:
+    color: "#F8F4F9"
+    image: assets/images/dalel.png
