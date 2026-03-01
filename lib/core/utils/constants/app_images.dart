@@ -1,8 +1,8 @@
 abstract class AppImages {
   // OnBoarding
-  static const imagesOnBoarding = "assets/images/onBoarding.png";
   static const imagesOnBoarding1 = "assets/images/onBoarding1.png";
   static const imagesOnBoarding2 = "assets/images/onBoarding2.png";
+  static const imagesOnBoarding3 = "assets/images/onBoarding.png";
   // Frame
   static const imagesFrame = "assets/images/Frame.png";
   static const imagesFrame3 = "assets/images/frame3.png";

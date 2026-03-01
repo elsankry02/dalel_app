@@ -1,3 +1,5 @@
 abstract class RouteNames {
-  static const onBoardingScreen = "/";
+  static const onBoardingPage = "/";
+  static const loginPage = "/LoginPage";
+  static const createAccountPage = "/CreateAccountPage";
 }

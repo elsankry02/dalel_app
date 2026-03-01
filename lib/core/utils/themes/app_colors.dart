@@ -9,6 +9,7 @@ abstract class AppColors {
   static const grey = Color(0xffC4C4C4);
   static const lightGrey = Color(0xffB4B4B4);
   static const deepGrey = Color(0xff6F6460);
+  static const genColor = Color(0xffD9D9D9);
   // default color
   static const balck = Color(0xff000000);
   static const white = Color(0xffffffff);

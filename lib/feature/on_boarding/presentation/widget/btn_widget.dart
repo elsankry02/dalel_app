@@ -1,0 +1,73 @@
+import 'package:dalel_app/core/components/custom_primary_btn.dart';
+import 'package:dalel_app/core/router/route_names.dart';
+import 'package:dalel_app/core/utils/extensions/extensions.dart';
+import 'package:dalel_app/core/utils/themes/app_colors.dart';
+import 'package:dalel_app/feature/on_boarding/data/model/on_boardind_model.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+class BtnWidget extends StatefulWidget {
+  final PageController controller;
+  final int currentIndex;
+  const BtnWidget({
+    super.key,
+    required this.controller,
+    required this.currentIndex,
+  });
+
+  @override
+  State<BtnWidget> createState() => _BtnWidgetState();
+}
+
+class _BtnWidgetState extends State<BtnWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return widget.currentIndex == onboardingFunc(context).length - 1
+        ? Column(
+            spacing: 16,
+            children: [
+              CustomPrimaryBtn(
+                padding: EdgeInsets.symmetric(vertical: context.h * 0.019),
+                title: context.tr("create_account"),
+                textStyle: context.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.white,
+                ),
+                onTap: () {
+                  context.replaceNamed(RouteNames.createAccountPage);
+                },
+              ),
+              RichText(
+                text: TextSpan(
+                  text: context.tr("login_now"),
+                  style: context.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.blackBrown,
+                    decoration: .underline,
+                  ),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () {
+                      context.replaceNamed(RouteNames.loginPage);
+                    },
+                ),
+              ),
+            ],
+          )
+        : CustomPrimaryBtn(
+            padding: EdgeInsets.symmetric(vertical: context.h * 0.019),
+            title: context.tr("next"),
+            textStyle: context.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.w500,
+              color: AppColors.white,
+            ),
+            onTap: () {
+              widget.controller.nextPage(
+                duration: Duration(milliseconds: 300),
+                curve: Curves.easeIn,
+              );
+            },
+          );
+  }
+}
