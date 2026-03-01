@@ -5,4 +5,6 @@ abstract class AppStrings {
   static const pacifico = "Pacifico";
   static const poppins = "Poppins";
   static const sairaCondensed = "Saira_Condensed";
+  // String
+  static const kTranslations = "assets/translations";
 }
