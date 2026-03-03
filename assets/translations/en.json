@@ -8,5 +8,15 @@
   "create_account": "Create Account",
   "login_now": "Login Now",
   "next": "Next",
-  "skip": "Skip"
+  "skip": "Skip",
+  "first_name": "First Name",
+  "last_name": "Last Name",
+  "email_address": "Email Address",
+  "password": "Password",
+  "agree_terms_text": "I have agree to our ",
+  "terms_and_conditions": "Terms and Condition",
+  "sign_up": "Sign Up",
+  "already_have_account": "Already have an account ?  ",
+  "sign_in": "Sign In",
+  "welcome": "Welcome !"
 }

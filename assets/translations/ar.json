@@ -8,5 +8,15 @@
   "create_account": "إنشاء حساب",
   "login_now": "سجل الدخول الآن",
   "next": "التالي",
-  "skip": "تخطي"
+  "skip": "تخطي",
+  "first_name": "الاسم الأول",
+  "last_name": "اسم العائلة",
+  "email_address": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "agree_terms_text": "أنا أوافق على ",
+  "terms_and_conditions": "الشروط والأحكام",
+  "sign_up": "إنشاء حساب",
+  "already_have_account": "لديك حساب بالفعل ؟  ",
+  "sign_in": "تسجيل الدخول",
+  "welcome": "مرحباً بك !"
 }
