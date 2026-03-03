@@ -36,7 +36,7 @@ class _BtnWidgetState extends State<BtnWidget> {
                   color: AppColors.white,
                 ),
                 onTap: () {
-                  context.replaceNamed(RouteNames.createAccountPage);
+                  context.replaceNamed(RouteNames.signUpPage);
                 },
               ),
               RichText(

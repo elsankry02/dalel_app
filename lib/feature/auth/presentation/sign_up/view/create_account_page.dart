@@ -2,19 +2,19 @@ import 'package:dalel_app/core/components/custom_primary_btn.dart';
 import 'package:dalel_app/core/components/custom_text_form_field.dart';
 import 'package:dalel_app/core/utils/extensions/extensions.dart';
 import 'package:dalel_app/core/utils/themes/app_colors.dart';
-import 'package:dalel_app/feature/auth/presentation/create_account/widget/already_have_account_widget.dart';
-import 'package:dalel_app/feature/auth/presentation/create_account/widget/terms_and_condition_widget.dart';
+import 'package:dalel_app/feature/auth/presentation/sign_up/widget/already_have_account_widget.dart';
+import 'package:dalel_app/feature/auth/presentation/sign_up/widget/terms_and_condition_widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-class CreateAccountPage extends StatefulWidget {
-  const CreateAccountPage({super.key});
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({super.key});
 
   @override
-  State<CreateAccountPage> createState() => _CreateAccountPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _CreateAccountPageState extends State<CreateAccountPage> {
+class _SignUpPageState extends State<SignUpPage> {
   final firstNameController = TextEditingController();
   final lastNameController = TextEditingController();
   final emailAddressController = TextEditingController();

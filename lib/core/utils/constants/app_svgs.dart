@@ -17,7 +17,4 @@ abstract class AppSvgs {
   static const imagesShoppingCart = "assets/images/shopping-cart.svg";
   static const imagesShoppingCartActive =
       "assets/images/shopping-cart-active.svg";
-  // Vector
-  static const imagesVector1 = "assets/images/vector1.svg";
-  static const imagesVector2 = "assets/images/vector2.svg";
 }

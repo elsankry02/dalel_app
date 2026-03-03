@@ -1,5 +1,6 @@
 import 'package:dalel_app/core/router/route_names.dart';
-import 'package:dalel_app/feature/auth/presentation/create_account/view/create_account_page.dart';
+import 'package:dalel_app/feature/auth/presentation/sign_up/view/create_account_page.dart';
+import 'package:dalel_app/feature/auth/presentation/forget_password/view/forget_password_page.dart';
 import 'package:dalel_app/feature/auth/presentation/login/view/login_page.dart';
 import 'package:dalel_app/feature/on_boarding/presentation/view/on_boarding_page.dart';
 import 'package:go_router/go_router.dart';
@@ -18,9 +19,14 @@ final router = GoRouter(
       builder: (context, state) => LoginPage(),
     ),
     GoRoute(
-      path: RouteNames.createAccountPage,
-      name: RouteNames.createAccountPage,
-      builder: (context, state) => CreateAccountPage(),
+      path: RouteNames.signUpPage,
+      name: RouteNames.signUpPage,
+      builder: (context, state) => SignUpPage(),
+    ),
+    GoRoute(
+      path: RouteNames.forgetPasswordPage,
+      name: RouteNames.forgetPasswordPage,
+      builder: (context, state) => ForgetPasswordPage(),
     ),
   ],
 );

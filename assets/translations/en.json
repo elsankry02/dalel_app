@@ -18,5 +18,7 @@
   "sign_up": "Sign Up",
   "already_have_account": "Already have an account ?  ",
   "sign_in": "Sign In",
-  "welcome": "Welcome !"
+  "welcome": "Welcome !",
+  "forgot_password": "Forgot Password ?",
+  "dont_have_account": "Don’t have an account ?  "
 }

@@ -18,5 +18,7 @@
   "sign_up": "إنشاء حساب",
   "already_have_account": "لديك حساب بالفعل ؟  ",
   "sign_in": "تسجيل الدخول",
-  "welcome": "مرحباً بك !"
+  "welcome": "مرحباً بك !",
+  "forgot_password": "نسيت كلمة المرور ؟",
+  "dont_have_account": "ليس لديك حساب ؟  "
 }
