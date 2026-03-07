@@ -1,4 +1,4 @@
-import 'package:dalel_app/core/utils/constants/app_images.dart';
+import '../../../../core/utils/constants/app_images.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

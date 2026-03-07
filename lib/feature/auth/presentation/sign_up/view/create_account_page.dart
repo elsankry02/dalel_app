@@ -1,9 +1,9 @@
-import 'package:dalel_app/core/components/custom_primary_btn.dart';
-import 'package:dalel_app/core/components/custom_text_form_field.dart';
-import 'package:dalel_app/core/utils/extensions/extensions.dart';
-import 'package:dalel_app/core/utils/themes/app_colors.dart';
-import 'package:dalel_app/feature/auth/presentation/sign_up/widget/already_have_account_widget.dart';
-import 'package:dalel_app/feature/auth/presentation/sign_up/widget/terms_and_condition_widget.dart';
+import '../../../../../core/components/custom_primary_btn.dart';
+import '../../../../../core/components/custom_text_form_field.dart';
+import '../../../../../core/utils/extensions/extensions.dart';
+import '../../../../../core/utils/themes/app_colors.dart';
+import '../widget/already_have_account_widget.dart';
+import '../widget/terms_and_condition_widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

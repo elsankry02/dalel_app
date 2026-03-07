@@ -1,5 +1,5 @@
-import 'package:dalel_app/core/router/go_router.dart';
-import 'package:dalel_app/core/utils/constants/app_strings.dart';
+import '../core/router/go_router.dart';
+import '../core/utils/constants/app_strings.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

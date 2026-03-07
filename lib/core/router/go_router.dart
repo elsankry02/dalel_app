@@ -1,8 +1,8 @@
-import 'package:dalel_app/core/router/route_names.dart';
-import 'package:dalel_app/feature/auth/presentation/sign_up/view/create_account_page.dart';
-import 'package:dalel_app/feature/auth/presentation/forget_password/view/forget_password_page.dart';
-import 'package:dalel_app/feature/auth/presentation/login/view/login_page.dart';
-import 'package:dalel_app/feature/on_boarding/presentation/view/on_boarding_page.dart';
+import 'route_names.dart';
+import '../../feature/auth/presentation/sign_up/view/create_account_page.dart';
+import '../../feature/auth/presentation/forget_password/view/forget_password_page.dart';
+import '../../feature/auth/presentation/login/view/login_page.dart';
+import '../../feature/on_boarding/presentation/view/on_boarding_page.dart';
 import 'package:go_router/go_router.dart';
 
 // GoRouter configuration

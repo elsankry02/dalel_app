@@ -1,4 +1,4 @@
-import 'package:dalel_app/core/utils/themes/app_colors.dart';
+import '../utils/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomPrimaryBtn extends StatelessWidget {

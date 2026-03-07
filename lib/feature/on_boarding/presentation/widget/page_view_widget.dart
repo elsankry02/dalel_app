@@ -1,6 +1,6 @@
-import 'package:dalel_app/core/utils/extensions/extensions.dart';
-import 'package:dalel_app/feature/on_boarding/data/model/on_boardind_model.dart';
-import 'package:dalel_app/feature/on_boarding/presentation/widget/list_generate_widget.dart';
+import '../../../../core/utils/extensions/extensions.dart';
+import '../../data/model/on_boardind_model.dart';
+import 'list_generate_widget.dart';
 import 'package:flutter/material.dart';
 
 class PageViewWidget extends StatefulWidget {

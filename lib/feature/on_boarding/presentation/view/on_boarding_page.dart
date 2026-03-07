@@ -1,7 +1,7 @@
-import 'package:dalel_app/core/utils/extensions/extensions.dart';
-import 'package:dalel_app/feature/on_boarding/presentation/widget/btn_widget.dart';
-import 'package:dalel_app/feature/on_boarding/presentation/widget/page_view_widget.dart';
-import 'package:dalel_app/feature/on_boarding/presentation/widget/skip_widget.dart';
+import '../../../../core/utils/extensions/extensions.dart';
+import '../widget/btn_widget.dart';
+import '../widget/page_view_widget.dart';
+import '../widget/skip_widget.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatefulWidget {

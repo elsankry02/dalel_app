@@ -1,8 +1,8 @@
-import 'package:dalel_app/core/components/custom_primary_btn.dart';
-import 'package:dalel_app/core/router/route_names.dart';
-import 'package:dalel_app/core/utils/extensions/extensions.dart';
-import 'package:dalel_app/core/utils/themes/app_colors.dart';
-import 'package:dalel_app/feature/on_boarding/data/model/on_boardind_model.dart';
+import '../../../../core/components/custom_primary_btn.dart';
+import '../../../../core/router/route_names.dart';
+import '../../../../core/utils/extensions/extensions.dart';
+import '../../../../core/utils/themes/app_colors.dart';
+import '../../data/model/on_boardind_model.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

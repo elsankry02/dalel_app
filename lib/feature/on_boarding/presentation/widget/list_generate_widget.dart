@@ -1,5 +1,5 @@
-import 'package:dalel_app/core/utils/themes/app_colors.dart';
-import 'package:dalel_app/feature/on_boarding/data/model/on_boardind_model.dart';
+import '../../../../core/utils/themes/app_colors.dart';
+import '../../data/model/on_boardind_model.dart';
 import 'package:flutter/material.dart';
 
 class ListGenerateWidget extends StatelessWidget {
