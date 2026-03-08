@@ -1,5 +1,6 @@
-import '../utils/themes/app_colors.dart';
 import 'package:flutter/material.dart';
+
+import '../utils/themes/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String labelText;
@@ -9,7 +10,7 @@ class CustomTextFormField extends StatelessWidget {
   final double radius;
   final AutovalidateMode? autovalidateMode;
   final TextInputType? keyboardType;
-  final EdgeInsets? contentPadding;
+  final EdgeInsetsGeometry? contentPadding;
   final TextStyle? labelStyle, suffixStyle, style, prefixStyle;
   final int? maxLength;
   final Widget? prefixIcon, suffixIcon;
@@ -54,7 +55,11 @@ class CustomTextFormField extends StatelessWidget {
       fontWeight: FontWeight.w400,
     ),
     this.radius = 4,
-    this.contentPadding = const EdgeInsets.only(bottom: 20, top: 20, left: 16),
+    this.contentPadding = const EdgeInsetsDirectional.only(
+      bottom: 20,
+      top: 20,
+      start: 16,
+    ),
   });
   @override
   Widget build(BuildContext context) {

@@ -1,0 +1,58 @@
+import 'package:dalel_app/app/boot.dart';
+import 'package:dalel_app/core/databases/cache/cache_helper.dart';
+import 'package:dalel_app/core/router/route_names.dart';
+import 'package:dalel_app/core/utils/constants/app_strings.dart';
+import 'package:dalel_app/core/utils/extensions/extensions.dart';
+import 'package:dalel_app/core/utils/themes/app_colors.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+class SplashPage extends StatefulWidget {
+  const SplashPage({super.key});
+
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    _navigateDelayed();
+    super.initState();
+  }
+
+  void _navigateDelayed() async {
+    await Future.delayed(const Duration(milliseconds: 500));
+    if (!mounted) return;
+
+    //! Check isVisited
+    final isVisited = getIt<CacheHelper>().getBool(key: "isSaved") ?? false;
+    if (isVisited == true) {
+      context.replaceNamed(RouteNames.loginPage);
+    } else {
+      context.replaceNamed(RouteNames.onBoardingPage);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.offWhite,
+      body: Center(
+        child: Column(
+          crossAxisAlignment: .center,
+          mainAxisAlignment: .center,
+          children: [
+            Text(
+              "Dalel",
+              style: context.textTheme.displayLarge?.copyWith(
+                color: AppColors.deepBrown,
+                fontFamily: AppStrings.pacifico,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

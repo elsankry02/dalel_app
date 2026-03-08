@@ -1,3 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../../core/components/custom_primary_btn.dart';
 import '../../../../../core/components/custom_text_form_field.dart';
 import '../../../../../core/utils/extensions/extensions.dart';
@@ -5,8 +8,6 @@ import '../../../../../core/utils/themes/app_colors.dart';
 import '../widget/dont_have_account_widget.dart';
 import '../widget/forgot_password_widget.dart';
 import '../widget/top_login_widget.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -35,13 +36,12 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           TopLoginWidget(),
           SizedBox(height: context.h * 0.032),
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: [
                 Text(
-                  context.tr("welcome"),
+                  context.tr("welcomeback"),
                   style: context.textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                   ),

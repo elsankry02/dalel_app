@@ -1,12 +1,15 @@
+import 'package:dalel_app/app/boot.dart';
+import 'package:dalel_app/core/databases/cache/cache_helper.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
 import '../../../../core/components/custom_primary_btn.dart';
 import '../../../../core/router/route_names.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/utils/themes/app_colors.dart';
 import '../../data/model/on_boardind_model.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class BtnWidget extends StatefulWidget {
   final PageController controller;
@@ -24,6 +27,7 @@ class BtnWidget extends StatefulWidget {
 class _BtnWidgetState extends State<BtnWidget> {
   @override
   Widget build(BuildContext context) {
+    final isSaved = getIt<CacheHelper>().saveData(key: "isSaved", value: true);
     return widget.currentIndex == onboardingFunc(context).length - 1
         ? Column(
             spacing: 16,
@@ -37,6 +41,7 @@ class _BtnWidgetState extends State<BtnWidget> {
                 ),
                 onTap: () {
                   context.replaceNamed(RouteNames.signUpPage);
+                  isSaved;
                 },
               ),
               RichText(
@@ -50,6 +55,7 @@ class _BtnWidgetState extends State<BtnWidget> {
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
                       context.replaceNamed(RouteNames.loginPage);
+                      isSaved;
                     },
                 ),
               ),

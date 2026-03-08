@@ -8,6 +8,7 @@ import 'core/utils/constants/app_strings.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  setupServiceLocator();
   await getIt<CacheHelper>().init();
   await EasyLocalization.ensureInitialized();
   runApp(

@@ -1,3 +1,4 @@
+import 'package:dalel_app/feature/splash/splash_page.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../feature/auth/presentation/forget_password/view/forget_password_page.dart';
@@ -9,6 +10,11 @@ import 'route_names.dart';
 // GoRouter configuration
 final router = GoRouter(
   routes: [
+    GoRoute(
+      path: RouteNames.splashPage,
+      name: RouteNames.splashPage,
+      builder: (context, state) => SplashPage(),
+    ),
     GoRoute(
       path: RouteNames.onBoardingPage,
       name: RouteNames.onBoardingPage,

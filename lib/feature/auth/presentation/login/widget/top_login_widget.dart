@@ -1,8 +1,9 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../core/utils/constants/app_images.dart';
 import '../../../../../core/utils/constants/app_strings.dart';
 import '../../../../../core/utils/extensions/extensions.dart';
 import '../../../../../core/utils/themes/app_colors.dart';
-import 'package:flutter/material.dart';
 
 class TopLoginWidget extends StatelessWidget {
   const TopLoginWidget({super.key});
@@ -20,7 +21,7 @@ class TopLoginWidget extends StatelessWidget {
           style: context.textTheme.headlineLarge?.copyWith(
             fontWeight: FontWeight.w700,
             color: AppColors.white,
-            fontFamily: AppStrings.sairaCondensed,
+            fontFamily: AppStrings.pacifico,
           ),
         ),
       ],
