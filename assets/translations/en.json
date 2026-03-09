@@ -22,5 +22,9 @@
   "forgot_password": "Forgot Password ?",
   "dont_have_account": "Don’t have an account ?  ",
   "dalel": "Dalel",
-  "welcomeback": "Welcome Back !"
+  "welcomeback": "Welcome Back !",
+  "enter_your_registered_email_below_to_receive_password_reset_instruction": "Enter your registered email below to receive\npassword reset instruction",
+  "send_verification_code": "Send Verification Code",
+  "forgot_password_page": "Forgot Password"
+
 }

@@ -22,5 +22,8 @@
   "forgot_password": "نسيت كلمة المرور ؟",
   "dont_have_account": "ليس لديك حساب ؟  ",
   "dalel": "دليل",
-  "welcomeback": "حمداً لله على سلامتك !"
+  "welcomeback": "حمداً لله على سلامتك !",
+  "enter_your_registered_email_below_to_receive_password_reset_instruction": "أدخل بريدك الإلكتروني المسجل أدناه لتلقي تعليمات\nإعادة تعيين كلمة السر",
+  "send_verification_code": "إرسال رمز التحقق",
+  "forgot_password_page": "نسيت كلمة المرور ؟"
 }

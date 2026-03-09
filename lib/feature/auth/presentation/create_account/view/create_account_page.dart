@@ -16,7 +16,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
-  final formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   final firstNameController = TextEditingController();
   final lastNameController = TextEditingController();
   final emailAddressController = TextEditingController();
@@ -36,67 +36,70 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.offWhite,
-      body: ListView(
-        padding: EdgeInsetsDirectional.only(
-          top: context.h * 0.200,
-          start: context.h * 0.024,
-          end: context.h * 0.024,
-        ),
-        children: [
-          Text(
-            context.tr("welcome"),
-            style: context.textTheme.headlineMedium?.copyWith(
-              fontWeight: FontWeight.w600,
+      body: Form(
+        key: _formKey,
+        child: ListView(
+          padding: EdgeInsetsDirectional.only(
+            top: context.h * 0.200,
+            start: context.h * 0.024,
+            end: context.h * 0.024,
+          ),
+          children: [
+            Text(
+              context.tr("welcome"),
+              style: context.textTheme.headlineMedium?.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+              textAlign: .center,
             ),
-            textAlign: .center,
-          ),
-          SizedBox(height: context.h * 0.060),
-          CustomTextFormField(
-            labelText: context.tr("first_name"),
-            controller: firstNameController,
-          ),
-          SizedBox(height: context.h * 0.030),
-          CustomTextFormField(
-            labelText: context.tr("last_name"),
-            controller: lastNameController,
-          ),
-          SizedBox(height: context.h * 0.030),
-          CustomTextFormField(
-            labelText: context.tr("email_address"),
-            controller: emailAddressController,
-          ),
-          SizedBox(height: context.h * 0.030),
-          CustomTextFormField(
-            labelText: context.tr("password"),
-            controller: passWordController,
-            obscureText: isSelected,
-            suffixIcon: InkWell(
-              onTap: () {
-                setState(() {
-                  isSelected = !isSelected;
-                });
-              },
-              child: Icon(
-                isSelected
-                    ? Icons.visibility_off_outlined
-                    : Icons.visibility_outlined,
-                color: AppColors.lightGrey,
+            SizedBox(height: context.h * 0.060),
+            CustomTextFormField(
+              labelText: context.tr("first_name"),
+              controller: firstNameController,
+            ),
+            SizedBox(height: context.h * 0.030),
+            CustomTextFormField(
+              labelText: context.tr("last_name"),
+              controller: lastNameController,
+            ),
+            SizedBox(height: context.h * 0.030),
+            CustomTextFormField(
+              labelText: context.tr("email_address"),
+              controller: emailAddressController,
+            ),
+            SizedBox(height: context.h * 0.030),
+            CustomTextFormField(
+              labelText: context.tr("password"),
+              controller: passWordController,
+              obscureText: isSelected,
+              suffixIcon: InkWell(
+                onTap: () {
+                  setState(() {
+                    isSelected = !isSelected;
+                  });
+                },
+                child: Icon(
+                  isSelected
+                      ? Icons.visibility_off_outlined
+                      : Icons.visibility_outlined,
+                  color: AppColors.lightGrey,
+                ),
               ),
             ),
-          ),
-          SizedBox(height: context.h * 0.020),
-          TermsAndConditionWidget(),
-          SizedBox(height: context.h * 0.120),
-          CustomPrimaryBtn(
-            title: context.tr("sign_up"),
-            textStyle: context.textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.w500,
-              color: AppColors.white,
+            SizedBox(height: context.h * 0.020),
+            TermsAndConditionWidget(),
+            SizedBox(height: context.h * 0.120),
+            CustomPrimaryBtn(
+              title: context.tr("sign_up"),
+              textStyle: context.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w500,
+                color: AppColors.white,
+              ),
             ),
-          ),
-          SizedBox(height: context.h * 0.016),
-          AlreadyHaveAccountWidget(),
-        ],
+            SizedBox(height: context.h * 0.016),
+            AlreadyHaveAccountWidget(),
+          ],
+        ),
       ),
     );
   }

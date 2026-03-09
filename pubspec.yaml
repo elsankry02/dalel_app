@@ -87,7 +87,10 @@ flutter:
         - asset: assets/fonts/Pacifico-Regular.ttf
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/poppins_font/Poppins-Bold.ttf
+        - asset: assets/fonts/poppins_font/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/poppins_font/Poppins-Medium.ttf
+        - asset: assets/fonts/poppins_font/Poppins-Regular.ttf
     - family: Saira_Condensed
       fonts:
         - asset: assets/fonts/Saira_Condensed-Regular.ttf

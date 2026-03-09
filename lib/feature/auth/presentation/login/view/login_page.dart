@@ -17,13 +17,13 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final formKey = GlobalKey<FormState>();
-  final emailAddressController = TextEditingController();
-  final passWordController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _emailAddressController = TextEditingController();
+  final _passWordController = TextEditingController();
   @override
   void dispose() {
-    emailAddressController.dispose();
-    passWordController.dispose();
+    _emailAddressController.dispose();
+    _passWordController.dispose();
     super.dispose();
   }
 
@@ -32,62 +32,65 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          TopLoginWidget(),
-          SizedBox(height: context.h * 0.032),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Column(
-              children: [
-                Text(
-                  context.tr("welcomeback"),
-                  style: context.textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
+      body: Form(
+        key: _formKey,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            TopLoginWidget(),
+            SizedBox(height: context.h * 0.032),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                  Text(
+                    context.tr("welcomeback"),
+                    style: context.textTheme.headlineMedium?.copyWith(
+                      fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: .center,
                   ),
-                  textAlign: .center,
-                ),
-                SizedBox(height: context.h * 0.048),
-                CustomTextFormField(
-                  labelText: context.tr("email_address"),
-                  controller: emailAddressController,
-                ),
-                SizedBox(height: context.h * 0.030),
-                CustomTextFormField(
-                  labelText: context.tr("password"),
-                  controller: passWordController,
-                  obscureText: isSelected,
-                  suffixIcon: InkWell(
-                    onTap: () {
-                      setState(() {
-                        isSelected = !isSelected;
-                      });
-                    },
-                    child: Icon(
-                      isSelected
-                          ? Icons.visibility_off_outlined
-                          : Icons.visibility_outlined,
-                      color: AppColors.lightGrey,
+                  SizedBox(height: context.h * 0.048),
+                  CustomTextFormField(
+                    labelText: context.tr("email_address"),
+                    controller: _emailAddressController,
+                  ),
+                  SizedBox(height: context.h * 0.030),
+                  CustomTextFormField(
+                    labelText: context.tr("password"),
+                    controller: _passWordController,
+                    obscureText: isSelected,
+                    suffixIcon: InkWell(
+                      onTap: () {
+                        setState(() {
+                          isSelected = !isSelected;
+                        });
+                      },
+                      child: Icon(
+                        isSelected
+                            ? Icons.visibility_off_outlined
+                            : Icons.visibility_outlined,
+                        color: AppColors.lightGrey,
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(height: 16),
-                ForgotPasswordWidget(),
-                SizedBox(height: context.h * 0.110),
-                CustomPrimaryBtn(
-                  title: context.tr("sign_in"),
-                  textStyle: context.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w500,
-                    color: AppColors.white,
+                  SizedBox(height: 16),
+                  ForgotPasswordWidget(),
+                  SizedBox(height: context.h * 0.110),
+                  CustomPrimaryBtn(
+                    title: context.tr("sign_in"),
+                    textStyle: context.textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.white,
+                    ),
                   ),
-                ),
-                SizedBox(height: context.h * 0.016),
-                DontHaveAccountWidget(),
-              ],
+                  SizedBox(height: context.h * 0.016),
+                  DontHaveAccountWidget(),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

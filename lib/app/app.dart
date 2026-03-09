@@ -1,7 +1,8 @@
-import '../core/router/go_router.dart';
-import '../core/utils/constants/app_strings.dart';
+import 'package:dalel_app/core/utils/themes/app_themes.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+
+import '../core/router/go_router.dart';
 
 class DalelApp extends StatelessWidget {
   const DalelApp({super.key});
@@ -14,7 +15,9 @@ class DalelApp extends StatelessWidget {
       locale: context.locale,
       routerConfig: router,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: .light, fontFamily: AppStrings.poppins),
+      darkTheme: AppThemes.darkTheme,
+      theme: AppThemes.lightTheme,
+      themeMode: .light,
     );
   }
 }
