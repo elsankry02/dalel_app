@@ -1,4 +1,4 @@
-import 'package:dalel_app/feature/splash/splash_page.dart';
+import '../../feature/splash/splash_page.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../feature/auth/presentation/forget_password/view/forget_password_page.dart';

@@ -1,6 +1,6 @@
-import 'package:dalel_app/app/boot.dart';
-import 'package:dalel_app/core/databases/cache/cache_helper.dart';
-import 'package:dalel_app/core/router/route_names.dart';
+import '../../../../app/boot.dart';
+import '../../../../core/databases/cache/cache_helper.dart';
+import '../../../../core/router/route_names.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
