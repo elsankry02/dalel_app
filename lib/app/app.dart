@@ -1,4 +1,4 @@
-import 'package:dalel_app/core/utils/themes/app_themes.dart';
+import '../core/utils/themes/app_themes.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
